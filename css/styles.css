@@ -48,3 +48,9 @@ a:hover, a:active {
 ul {
     list-style-type: none;
   }
+
+#welcome {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
