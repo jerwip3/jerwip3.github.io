@@ -1,0 +1,15 @@
+[
+  {
+    "name": "notes-helper-cli",
+    "description": "A personal practice project demonstrating Python CLI concepts using Typer, SQLite, and Pytest.",
+    "url": "https://github.com/jerwip3/notes-helper-cli",
+    "stargazerCount": 0,
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python"
+        }
+      ]
+    }
+  }
+]
