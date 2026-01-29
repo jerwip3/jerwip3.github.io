@@ -11,7 +11,7 @@ const query = `
                     name
                     description
                     url
-                    stargazerCount
+                    openGraphImageUrl
                     languages(first: 3) {
                         nodes {
                             name
