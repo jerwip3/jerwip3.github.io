@@ -59,19 +59,32 @@ function Profile() {
   );
 }
 
+function ProjectImage({ src, name }) {
+  const fallbackImage = "/src/assets/code-snippet.png"; 
+
+  return (
+    <img 
+      src={src || fallbackImage} 
+      alt={name} 
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+    />
+  );
+}
+
 function ProjectCard({ project }) {
 
 const hasLanguages = project.languages?.nodes?.length > 0;
 
   return (
-    <div className="group relative bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-sky-500 transition-all duration-300 shadow-xl">
-      <div className="aspect-video overflow-hidden">
-        <img 
-          src={project.openGraphImageUrl} 
-          alt={project.name} 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-        />
-      </div>
+    <div className="group relative bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 
+                    hover:border-sky-500/50 hover:-translate-y-2 transition-all duration-300 
+                    hover:shadow-[0_0_30px_-10px_rgba(56,189,248,0.3)]">
+    <div className="aspect-video overflow-hidden">
+      <ProjectImage 
+        src={project.openGraphImageUrl} 
+        name={project.name} 
+      />
+    </div>
 
       <div className="p-6">
         <h2 className="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">
@@ -106,8 +119,9 @@ const hasLanguages = project.languages?.nodes?.length > 0;
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white font-sans">
-      
+    <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full 
+                      bg-[radial-gradient(circle_at_50%_-20%,rgba(56,189,248,0.1),transparent_50%)] pointer-events-none" />
       <div className="max-w-6xl mx-auto px-6">
         <Profile />
         
