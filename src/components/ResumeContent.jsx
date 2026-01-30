@@ -2,8 +2,12 @@ export default function ResumeContent() {
   return (
     <div className="text-left text-slate-700 space-y-8 p-4 md:p-12 bg-white">
       <section className="border-b-2 border-slate-100 pb-8">
-        <h2 className="text-4xl font-black text-ateneo tracking-tight">Jeremy Wipperfurth</h2>
-        <p className="mt-2 text-slate-500 font-medium">Madison, WI / Dallas, TX | jerwip@gmail.com</p>
+        <h2 className="text-4xl font-black text-ateneo tracking-tight">
+          Jeremy Wipperfurth
+        </h2>
+        <p className="mt-2 text-slate-500 font-medium">
+          Madison, WI / Dallas, TX | jerwip@gmail.com
+        </p>
       </section>
 
       <section>
@@ -11,8 +15,10 @@ export default function ResumeContent() {
           Professional Summary
         </h3>
         <p className="leading-relaxed text-slate-600">
-          Dedicated Software Development student with a 3.89 GPA.
-          Transitioning from a successful career in aviation to software engineering, bringing extensive experience in team management, troubleshooting, and performing under pressure.
+          Dedicated Software Development student with a 3.89 GPA. Transitioning
+          from a successful career in aviation to software engineering, bringing
+          extensive experience in team management, troubleshooting, and
+          performing under pressure.
         </p>
       </section>
 
@@ -23,11 +29,17 @@ export default function ResumeContent() {
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-baseline flex-wrap gap-2">
-              <p className="font-bold text-slate-900 text-lg">Fox Valley Technical College</p>
+              <p className="font-bold text-slate-900 text-lg">
+                Fox Valley Technical College
+              </p>
               <p className="text-sm font-bold text-ateneo">Exp. May 2026</p>
             </div>
-            <p className="text-cochineal font-semibold italic">A.A.S. – Software Developer</p>
-            <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest font-bold">GPA: 3.89 | Dean’s List | Phi Theta Kappa</p>
+            <p className="text-cochineal font-semibold italic">
+              A.A.S. – Software Developer
+            </p>
+            <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest font-bold">
+              GPA: 3.89 | Dean's List | Phi Theta Kappa
+            </p>
 
             <div className="mt-6">
               <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">
@@ -64,11 +76,17 @@ export default function ResumeContent() {
 
           <div className="pt-6 border-t border-slate-100">
             <div className="flex justify-between items-baseline flex-wrap gap-2">
-              <p className="font-bold text-slate-900 text-lg">Arizona State University</p>
+              <p className="font-bold text-slate-900 text-lg">
+                Arizona State University
+              </p>
               <p className="text-sm font-bold text-ateneo">Fall 2026 Start</p>
             </div>
-            <p className="text-cochineal font-semibold italic text-sm">B.S. – Computer Science Candidate</p>
-            <p className="text-xs text-slate-400 mt-1 italic">Accepted for transfer to complete bachelor’s degree</p>
+            <p className="text-cochineal font-semibold italic text-sm">
+              B.S. – Computer Science Candidate
+            </p>
+            <p className="text-xs text-slate-400 mt-1 italic">
+              Accepted for transfer to complete bachelor's degree
+            </p>
           </div>
         </div>
       </section>
@@ -80,24 +98,57 @@ export default function ResumeContent() {
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-baseline flex-wrap gap-2">
-              <p className="font-bold text-slate-900 text-lg">Delta Air Lines | Ramp Agent</p>
-              <p className="text-xs font-bold text-slate-400 uppercase">Jan 2022 – Present</p>
+              <p className="font-bold text-slate-900 text-lg">
+                Delta Air Lines | Ramp Agent
+              </p>
+              <p className="text-xs font-bold text-slate-400 uppercase">
+                Jan 2022 – Present
+              </p>
             </div>
-            <p className="text-ateneo text-sm font-bold mb-3 italic">Load Distribution & Operations Desk</p>
+            <p className="text-ateneo text-sm font-bold mb-3 italic">
+              Load Distribution & Operations Desk
+            </p>
             <ul className="list-disc list-outside ml-5 space-y-2 text-sm text-slate-600">
-              <li><span className="font-bold text-slate-900">Operations Management:</span> Monitor timelines for fuel and cargo to ensure on-time departures.</li>
-              <li><span className="font-bold text-slate-900">Analytical Planning:</span> Calculate aircraft weight and balance configurations with high accuracy.</li>
-              <li><span className="font-bold text-slate-900">Leadership:</span> Direct teams during high-pressure events and diversions.</li>
+              <li>
+                <span className="font-bold text-slate-900">
+                  Operations Management:
+                </span>{" "}
+                Monitor timelines for fuel and cargo to ensure on-time
+                departures.
+              </li>
+              <li>
+                <span className="font-bold text-slate-900">
+                  Analytical Planning:
+                </span>{" "}
+                Calculate aircraft weight and balance configurations with high
+                accuracy.
+              </li>
+              <li>
+                <span className="font-bold text-slate-900">Leadership:</span>{" "}
+                Direct teams during high-pressure events and diversions.
+              </li>
             </ul>
           </div>
           <div className="pt-6 border-t border-slate-50">
             <div className="flex justify-between items-baseline flex-wrap gap-2">
-              <p className="font-bold text-slate-900 text-lg">Envoy Air | Customer Service & Ramp Crew Chief</p>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Jun 2017 – Jan 2022</p>
+              <p className="font-bold text-slate-900 text-lg">
+                Envoy Air | Customer Service & Ramp Crew Chief
+              </p>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                Jun 2017 – Jan 2022
+              </p>
             </div>
             <ul className="list-disc list-outside ml-5 mt-3 space-y-2 text-sm text-slate-600">
-              <li><span className="font-bold text-slate-900">Training:</span> Served as a designated trainer for aircraft familiarization, instructing new hires on safety and equipment operation.</li>
-              <li><span className="font-bold text-slate-900">Versatility:</span> Performed dual roles in customer service and ramp operations, resolving passenger issues while maintaining ground efficiency.</li>
+              <li>
+                <span className="font-bold text-slate-900">Training:</span>{" "}
+                Served as a designated trainer for aircraft familiarization,
+                instructing new hires on safety and equipment operation.
+              </li>
+              <li>
+                <span className="font-bold text-slate-900">Versatility:</span>{" "}
+                Performed dual roles in customer service and ramp operations,
+                resolving passenger issues while maintaining ground efficiency.
+              </li>
             </ul>
           </div>
         </div>
@@ -109,13 +160,18 @@ export default function ResumeContent() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-ateneo p-5 rounded-2xl">
-            <p className="text-white/50 font-black mb-2 uppercase text-[10px] tracking-widest">Languages & Frameworks</p>
+            <p className="text-white/50 font-black mb-2 uppercase text-[10px] tracking-widest">
+              Languages & Frameworks
+            </p>
             <p className="text-sm text-white leading-relaxed">
-              C#, C++, JavaScript, SQL, ASP.NET Core, React, Tailwind CSS, Entity Framework
+              C#, C++, JavaScript, SQL, ASP.NET Core, React, Tailwind CSS,
+              Entity Framework
             </p>
           </div>
           <div className="bg-slate-100 p-5 rounded-2xl border border-slate-200">
-            <p className="text-ateneo font-black mb-2 uppercase text-[10px] tracking-widest">Tools & Concepts</p>
+            <p className="text-ateneo font-black mb-2 uppercase text-[10px] tracking-widest">
+              Tools & Concepts
+            </p>
             <p className="text-sm text-slate-700 leading-relaxed">
               Azure, SignalR, Git/GitHub, OOP, n-Tier Architecture, Agile/Scrum
             </p>
