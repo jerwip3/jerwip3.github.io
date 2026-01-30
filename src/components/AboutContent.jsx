@@ -13,36 +13,22 @@ export default function AboutContent() {
 
           <div className="space-y-6 text-md text-slate-700 dark:text-slate-300 leading-relaxed">
             <p>
-              Born in 1993 and raised just outside of Madison in Sun Prairie,
-              Wisconsin, I've been surrounded by technology for as long as I can
-              remember. My adolescence was defined by PC gaming and building
-              hardware, which eventually led me to tinker with websites, PHP,
-              and CMS systems back in high school. While I didn't pursue it
-              academically at the time, that foundational curiosity for how
-              systems function never left me.
+              My interest in technology started with PC building and tinkering
+              with PHP and CMS systems long before I pursued it professionally.
+              After several years in aviation I decided to return to my roots in
+              software. Balancing full-time airline work with rigorous
+              coursework, I've spent the last few years diving deep into
+              full-stack development, logic, and mathematics.
             </p>
             <p>
-              In 2017, my career took a turn into aviation with Envoy Air, later
-              transitioning to Delta Air Lines in 2022. This path allowed me to
-              travel the world and even clock around 60 hours of casual flight
-              training. However, in 2023, I decided to further my education and
-              enrolled in an AAS program at FVTC. Balancing full-time airline
-              employment with rigorous coursework, I've spent the last three
-              years diving deep into software development.
-            </p>
-            <p>
-              As I approach graduation this spring, I've decided to push beyond
-              the associate level. After completing higher-level mathematics
-              through Calculus III, I've been accepted into the Computer Science
-              program at Arizona State University for the Fall of 2026. I'm
-              eager to continue growing in the tech space.
-            </p>
-            <p>
-              Currently, I split my time between my hometown of Madison and
-              Dallas, Texas, where I live with my partner of four years. When
-              I'm away from the keyboard, I'm likely watching the Packers,
-              Chelsea FC, Avalanche, or the Brewers. I also stay rooted in
-              Wisconsin sports, following the Badgers and Forward Madison FC.
+              As I wrap up my AAS in Software Development this spring and
+              prepare to join Arizona State University's Computer Science
+              program in the fall, I'm focused on building applications that are
+              as as intuitive as they are robust. Currently splitting my time
+              between Madison and Dallas, I spend my life away from the keyboard
+              cheering for the Packers, Chelsea FC, and the Avalanche, or
+              staying rooted in Wisconsin sports with the Badgers and Forward
+              Madison.
             </p>
           </div>
 

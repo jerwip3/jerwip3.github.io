@@ -2,7 +2,7 @@ export default function ResumeContent() {
   return (
     <div className="text-left text-slate-700 dark:text-slate-300 space-y-8 p-4 md:p-12 bg-white dark:bg-[#001d3d] transition-colors duration-500">
       <section className="border-b-2 border-slate-100 dark:border-white/10 pb-8">
-        <h2 className="text-4xl font-black text-ateneo dark:text-white tracking-tight">
+        <h2 className="text-3xl font-black text-ateneo dark:text-white tracking-tight">
           Jeremy Wipperfurth
         </h2>
         <p className="mt-2 text-slate-500 dark:text-slate-400 font-medium">

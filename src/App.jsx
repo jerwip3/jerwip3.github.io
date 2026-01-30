@@ -83,16 +83,21 @@ function Profile({ isDark, setIsDark }) {
         >
           <div className="absolute inset-0 bg-ateneo/60 dark:bg-black/80 backdrop-blur-sm" />
           <div
-            className="relative bg-white dark:bg-[#001d3d] w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl custom-scrollbar pr-2"
+            className="relative bg-white dark:bg-[#001d3d] w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl custom-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={() => setShowResume(false)}
-              className="absolute top-6 right-6 text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-2xl font-bold transition-colors z-20"
-            >
-              X
-            </button>
-            <ResumeContent />
+            <div className="h-2 bg-cochineal w-full sticky top-0 z-40" />
+            <div className="sticky top-2 right-0 z-30 flex justify-end p-6 pointer-events-none">
+              <button
+                onClick={() => setShowResume(false)}
+                className="pointer-events-auto bg-white/10 dark:bg-black/20 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-xl font-bold transition-all shadow-lg border border-white/10"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="-mt-16">
+              <ResumeContent />
+            </div>
           </div>
         </div>
       )}
@@ -107,14 +112,18 @@ function Profile({ isDark, setIsDark }) {
             className="relative bg-white dark:bg-[#001d3d] w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl custom-scrollbar border border-transparent dark:border-white/5"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="h-2 bg-cochineal w-full" />
-            <button
-              onClick={() => setShowAbout(false)}
-              className="absolute top-8 right-8 text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-2xl font-bold transition-colors z-20"
-            >
-              X
-            </button>
-            <AboutContent />
+            <div className="h-2 bg-cochineal w-full sticky top-0 z-30" />
+            <div className="sticky top-2 right-0 z-30 flex justify-end p-6 pointer-events-none">
+              <button
+                onClick={() => setShowAbout(false)}
+                className="pointer-events-auto bg-white/10 dark:bg-black/20 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-xl font-bold transition-all shadow-lg border border-white/10"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="-mt-16">
+              <AboutContent />
+            </div>
           </div>
         </div>
       )}
