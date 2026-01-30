@@ -8,11 +8,11 @@ function Profile() {
 
   return (
     <header className="py-20 flex flex-col items-center text-center px-4">
-      <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900">
-        Hi, I'm <span className="text-ateneo underline decoration-cochineal decoration-4 underline-offset-[12px]">
-          Jeremy Wipperfurth
-        </span>
-      </h1>
+    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.2] md:leading-tight">
+      Hi, I'm <span className="text-ateneo underline decoration-cochineal decoration-2 md:decoration-4 underline-offset-[8px] md:underline-offset-[12px]">
+      Jeremy Wipperfurth
+      </span>
+    </h1>
       
       <p className="mt-8 text-xl text-slate-600 max-w-2xl leading-relaxed">
         Software Development student and ASU Computer Science candidate.
@@ -20,20 +20,13 @@ function Profile() {
         scalable software solutions.
       </p>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <div className="mt-10">
         <button 
           onClick={() => setShowResume(true)}
-          className="px-8 py-3 bg-ateneo hover:bg-cochineal active:scale-95 text-white font-bold rounded-full transition-all shadow-lg hover:shadow-special-red/20"
-        >
+          className="group relative px-12 py-4 bg-ateneo text-white font-black rounded-full transition-all hover:bg-cochineal active:scale-95 shadow-xl shadow-ateneo/20 hover:shadow-cochineal/20 uppercase tracking-widest text-sm">
           View Resume
+          <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
         </button>
-        
-        <a 
-          href="mailto:jerwip@gmail.com"
-          className="px-8 py-3 border-2 border-ateneo text-ateneo hover:bg-ateneo hover:text-white font-bold rounded-full transition-all"
-        >
-          Get in Touch
-        </a>
       </div>
 
       {showResume && (
@@ -153,6 +146,7 @@ function App() {
             <div className="flex justify-center gap-6 mb-4">
               <a href="https://github.com/jerwip3" className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm">GitHub</a>
               <a href="https://www.linkedin.com/in/jeremywipperfurth/" className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm">LinkedIn</a>
+              <a href="mailto:jerwip@gmail.com" className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm">Email</a>
             </div>
             <p className="text-[10px] text-ateneo uppercase tracking-[0.2em] ">
               &copy; 2026 Jeremy Wipperfurth - Built with React & Tailwind v4
