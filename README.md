@@ -7,7 +7,7 @@ This is my personal portfolio. It's where I'm documenting my move from a career 
 This was a project to both build out a personal portfolio page and to learn how to use React paired with Tailwind CSS (and Vite for rapid iterations) to create a modern, responsive webpage.
 
 - **React 19 & Vite:** I used this to move beyond static HTML and explore component based architecture and state management. Vite was essential for the rapid feedback loop during development.
-- **Tailwind CSS v4:** I specifically chose the newest version of Tailwind to experiment with its "CSS-first" configuration. It allowed me to build a custom brand—like my Navy and Red theme—efficiently.
+- **Tailwind CSS v4:** I specifically chose the newest version of Tailwind to experiment with its "CSS-first" configuration. It allowed me to build a custom brand like my Navy and Red theme efficiently.
 - **GitHub API:** To keep the site dynamic, I integrated the GitHub API to pull my project data directly from my repositories. This ensures the "Featured Projects" section stays current without manual updates.
 
 ## Primary Features
