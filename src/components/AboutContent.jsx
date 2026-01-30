@@ -68,21 +68,21 @@ export default function AboutContent() {
           <div className="rounded-2xl bg-slate-100 aspect-square overflow-hidden border-2 border-ateneo shadow-md rotate-2 hover:rotate-0 transition-transform duration-500">
             <img
               src="/src/assets/london.png"
-              alt="Travel"
+              alt="Photo at Stamford Bridge Stadium"
               className="object-cover w-full h-full"
             />
           </div>
           <div className="rounded-2xl bg-slate-100 aspect-square overflow-hidden border-2 border-cochineal shadow-md -rotate-10 hover:rotate-0 transition-transform duration-500 mt-8">
             <img
               src="/src/assets/madison.png"
-              alt="Travel"
+              alt="Photo of Bascom Hill"
               className="object-cover w-full h-full"
             />
           </div>
           <div className="rounded-2xl bg-slate-100 aspect-[3/4] overflow-hidden border-2 border-ateneo shadow-md -rotate-2 hover:rotate-0 transition-transform duration-500 mt-8">
             <img
               src="/src/assets/flight.png"
-              alt="Travel"
+              alt="Photo of me in a Piper Archer"
               className="object-cover w-full h-full"
             />
           </div>
