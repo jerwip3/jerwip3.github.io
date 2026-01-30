@@ -1,154 +1,123 @@
 export default function ResumeContent() {
   return (
-    <div className="text-left text-gray-300 space-y-8 p-4 md:p-8">
-      <section className="border-b border-gray-700 pb-6">
-        <h2 className="text-3xl font-bold text-sky-400">Jeremy Wipperfurth</h2>
-        <p className="mt-2 text-gray-400">Madison, WI / Dallas, TX | jerwip@gmail.com</p>
+    <div className="text-left text-slate-700 space-y-8 p-4 md:p-12 bg-white">
+      <section className="border-b-2 border-slate-100 pb-8">
+        <h2 className="text-4xl font-black text-ateneo tracking-tight">Jeremy Wipperfurth</h2>
+        <p className="mt-2 text-slate-500 font-medium">Madison, WI / Dallas, TX | jerwip@gmail.com</p>
       </section>
 
       <section>
-        <h3 className="text-xl font-semibold text-white mb-3 uppercase tracking-wider border-l-4 border-sky-500 pl-3">
+        <h3 className="text-sm font-black text-ateneo mb-3 uppercase tracking-[0.2em] border-l-4 border-cochineal pl-4">
           Professional Summary
         </h3>
-        <p className="leading-relaxed">
-          Dedicated Software Development student with a 3.89 GPA. 
+        <p className="leading-relaxed text-slate-600">
+          Dedicated Software Development student with a 3.89 GPA.
           Transitioning from a successful career in aviation to software engineering, bringing extensive experience in team management, troubleshooting, and performing under pressure.
         </p>
       </section>
-  <section>
-    <h3 className="text-xl font-semibold text-white mb-3 uppercase tracking-wider border-l-4 border-sky-500 pl-3">
-      Education
-    </h3>
-    <div className="space-y-8">
-      <div>
-        <div className="mb-6">
-          <p className="font-bold text-white text-lg">Fox Valley Technical College</p>
-          <p className="text-sky-400 italic">A.A.S. – Software Developer | Exp. May 2026</p>
-          <p className="text-sm text-gray-500">GPA: 3.89 | Dean’s List | Phi Theta Kappa</p>
-        </div>
-
-        <div className="mt-6">
-          <h4 className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-4">
-            Relevant Coursework
-          </h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-800/40 p-4 rounded-xl border border-gray-700/50">
-              <p className="text-sky-400 font-bold text-xs uppercase tracking-widest mb-3 border-b border-gray-700 pb-1">
-                Development & Systems
-              </p>
-              <ul className="grid grid-cols-1 gap-1 text-sm text-gray-300">
-                <li>• Advanced Software Development</li>
-                <li>• Agile Development</li>
-                <li>• ASP.NET Core & SignalR</li>
-                <li>• Systems Analysis</li>
-                <li>• Data Administration</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800/40 p-4 rounded-xl border border-gray-700/50">
-              <p className="text-sky-400 font-bold text-xs uppercase tracking-widest mb-3 border-b border-gray-700 pb-1">
-                Mathematics & Logic
-              </p>
-              <ul className="grid grid-cols-1 gap-1 text-sm text-gray-300">
-                <li>• Calculus I, II, & III</li>
-                <li>• Introductory Statistics</li>
-                <li>• Math & Logic</li>
-                <li>• Information Assurance</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="pt-4 border-t border-gray-800">
-        <p className="font-bold text-white text-lg">Arizona State University</p>
-        <p className="text-sky-400 italic text-sm">B.S. – Computer Science Candidate | Fall 2026</p>
-        <p className="text-xs text-gray-500 mt-1 italic">Accepted for transfer to complete bachelor’s degree</p>
-      </div>
-    </div>
-  </section>
 
       <section>
-        <h3 className="text-xl font-semibold text-white mb-3 uppercase tracking-wider border-l-4 border-sky-500 pl-3">
+        <h3 className="text-sm font-black text-ateneo mb-6 uppercase tracking-[0.2em] border-l-4 border-cochineal pl-4">
+          Education
+        </h3>
+        <div className="space-y-8">
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-2">
+              <p className="font-bold text-slate-900 text-lg">Fox Valley Technical College</p>
+              <p className="text-sm font-bold text-ateneo">Exp. May 2026</p>
+            </div>
+            <p className="text-cochineal font-semibold italic">A.A.S. – Software Developer</p>
+            <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest font-bold">GPA: 3.89 | Dean’s List | Phi Theta Kappa</p>
+
+            <div className="mt-6">
+              <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">
+                Relevant Coursework
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <p className="text-ateneo font-bold text-[10px] uppercase tracking-widest mb-3 border-b border-slate-200 pb-1">
+                    Development & Systems
+                  </p>
+                  <ul className="grid grid-cols-1 gap-1 text-sm text-slate-600">
+                    <li>• Advanced Software Development</li>
+                    <li>• Agile Development</li>
+                    <li>• ASP.NET Core & SignalR</li>
+                    <li>• Systems Analysis</li>
+                    <li>• Data Administration</li>
+                  </ul>
+                </div>
+
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <p className="text-ateneo font-bold text-[10px] uppercase tracking-widest mb-3 border-b border-slate-200 pb-1">
+                    Mathematics & Logic
+                  </p>
+                  <ul className="grid grid-cols-1 gap-1 text-sm text-slate-600">
+                    <li>• Calculus I, II, & III</li>
+                    <li>• Introductory Statistics</li>
+                    <li>• Math & Logic</li>
+                    <li>• Information Assurance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-6 border-t border-slate-100">
+            <div className="flex justify-between items-baseline flex-wrap gap-2">
+              <p className="font-bold text-slate-900 text-lg">Arizona State University</p>
+              <p className="text-sm font-bold text-ateneo">Fall 2026 Start</p>
+            </div>
+            <p className="text-cochineal font-semibold italic text-sm">B.S. – Computer Science Candidate</p>
+            <p className="text-xs text-slate-400 mt-1 italic">Accepted for transfer to complete bachelor’s degree</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-sm font-black text-ateneo mb-6 uppercase tracking-[0.2em] border-l-4 border-cochineal pl-4">
           Professional Experience
         </h3>
-        <div className="space-y-6">
+        <div className="space-y-8">
           <div>
-            <div className="flex justify-between items-start flex-wrap gap-2">
-              <p className="font-bold text-white text-lg">Delta Air Lines | Ramp Agent</p>
-              <p className="text-sm text-gray-500 italic">Jan 2022 to Present</p>
+            <div className="flex justify-between items-baseline flex-wrap gap-2">
+              <p className="font-bold text-slate-900 text-lg">Delta Air Lines | Ramp Agent</p>
+              <p className="text-xs font-bold text-slate-400 uppercase">Jan 2022 – Present</p>
             </div>
-            <p className="text-sky-500 text-sm font-semibold mb-2">Load Distribution & Operations Desk</p>
-            <ul className="list-disc list-outside ml-5 space-y-1 text-sm">
-              <li><span className="font-bold text-white tracking-wide">Operations Management:</span> Monitor critical timelines for fuel, cargo, and passenger boarding to ensure on-time departures, coordinating communication between flight crews, gate agents, and ground teams.</li>
-              <li><span className="font-bold text-white tracking-wide">Analytical Planning (Load Distribution):</span> Calculate and plan cargo loading configurations to maintain aircraft weight and balance within strict safety envelopes, requiring high attention to detail and data accuracy. </li>
-              <li><span className="font-bold text-white tracking-wide">Leadership (Agent in Charge):</span> Direct teams in the servicing of aircraft and lead logistics during high-pressure events, such as diversions or inclement weather.</li>
+            <p className="text-ateneo text-sm font-bold mb-3 italic">Load Distribution & Operations Desk</p>
+            <ul className="list-disc list-outside ml-5 space-y-2 text-sm text-slate-600">
+              <li><span className="font-bold text-slate-900">Operations Management:</span> Monitor timelines for fuel and cargo to ensure on-time departures.</li>
+              <li><span className="font-bold text-slate-900">Analytical Planning:</span> Calculate aircraft weight and balance configurations with high accuracy.</li>
+              <li><span className="font-bold text-slate-900">Leadership:</span> Direct teams during high-pressure events and diversions.</li>
             </ul>
           </div>
-            <div>
-              <div className="flex justify-between items-start flex-wrap gap-2">
-                <p className="font-bold text-white text-lg">Envoy Air | Customer Service & Ramp Crew Chief</p>
-                <p className="text-sm text-gray-500 italic">Jun 2017 to Jan 2022</p>
-              </div>
-              <ul className="list-disc list-outside ml-5 mt-2 space-y-1 text-sm">
-                <li><span className="font-bold text-white tracking-wide">Training:</span> Served as a designated trainer for aircraft familiarization, instructing new hires on safety and equipment operation.</li>
-                <li><span className="font-bold text-white tracking-wide">Versatility:</span> Performed dual roles in customer service and ramp operations, resolving passenger issues while maintaining ground efficiency.</li>
-              </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h3 className="text-xl font-semibold text-white mb-3 uppercase tracking-wider border-l-4 border-sky-500 pl-3">
-          Academic Projects
-        </h3>
-        <div className="space-y-6">
-          <div>
-            <p className="font-bold text-white text-lg">Real-Time Game Application (Capstone)</p>
-            <p className="text-sky-400 italic text-sm mb-2">Advanced Software Development | ASP.NET, SignalR, Azure</p>
-            <ul className="list-disc list-outside ml-5 space-y-1 text-sm">
-              <li>Developing a multi-client game using n-Tier architecture to separate data, logic, and presentation layers.</li>
-              <li>Managing real-time state synchronization between multiple clients using SignalR.</li>
-            </ul>
-          </div>
-          <div>
-            <p className="font-bold text-white text-lg">Data Management Systems</p>
-            <p className="text-sky-400 italic text-sm mb-2">C#, SQL, Entity Framework</p>
-            <ul className="list-disc list-outside ml-5 space-y-1 text-sm">
-              <li>Designed relational database schemas and implemented secure data access layers.</li>
-              <li>Optimized SQL queries for efficient data retrieval and reporting.</li>
+          <div className="pt-6 border-t border-slate-50">
+            <div className="flex justify-between items-baseline flex-wrap gap-2">
+              <p className="font-bold text-slate-900 text-lg">Envoy Air | Customer Service & Ramp Crew Chief</p>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Jun 2017 – Jan 2022</p>
+            </div>
+            <ul className="list-disc list-outside ml-5 mt-3 space-y-2 text-sm text-slate-600">
+              <li><span className="font-bold text-slate-900">Training:</span> Served as a designated trainer for aircraft familiarization, instructing new hires on safety and equipment operation.</li>
+              <li><span className="font-bold text-slate-900">Versatility:</span> Performed dual roles in customer service and ramp operations, resolving passenger issues while maintaining ground efficiency.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section>
-        <h3 className="text-xl font-semibold text-white mb-4 uppercase tracking-wider border-l-4 border-sky-500 pl-3">
+      <section className="pt-6">
+        <h3 className="text-sm font-black text-ateneo mb-6 uppercase tracking-[0.2em] border-l-4 border-cochineal pl-4">
           Technical Toolkit
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-gray-700/50 p-4 rounded-lg border border-gray-600">
-            <p className="text-sky-400 font-bold mb-2 uppercase text-xs tracking-wider">Languages</p>
-            <p className="text-sm text-gray-200">
-              C#, C++, JavaScript, SQL, HTML5/CSS, PHP
+          <div className="bg-ateneo p-5 rounded-2xl">
+            <p className="text-white/50 font-black mb-2 uppercase text-[10px] tracking-widest">Languages & Frameworks</p>
+            <p className="text-sm text-white leading-relaxed">
+              C#, C++, JavaScript, SQL, ASP.NET Core, React, Tailwind CSS, Entity Framework
             </p>
           </div>
-          <div className="bg-gray-700/50 p-4 rounded-lg border border-gray-600">
-            <p className="text-sky-400 font-bold mb-2 uppercase text-xs tracking-wider">Frameworks</p>
-            <p className="text-sm text-gray-200">
-              ASP.NET Core, React, Tailwind CSS, .NET MAUI, Entity Framework, MVC
-            </p>
-          </div>
-          <div className="bg-gray-700/50 p-4 rounded-lg border border-gray-600">
-            <p className="text-sky-400 font-bold mb-2 uppercase text-xs tracking-wider">Tools & Cloud</p>
-            <p className="text-sm text-gray-200">
-              Azure, SignalR, REST APIs, Git/GitHub, Vite
-            </p>
-          </div>
-          <div className="bg-gray-700/50 p-4 rounded-lg border border-gray-600">
-            <p className="text-sky-400 font-bold mb-2 uppercase text-xs tracking-wider">Concepts</p>
-            <p className="text-sm text-gray-200">
-              OOP, n-Tier Architecture, Agile/Scrum, Systems Analysis, Relational Database Design
+          <div className="bg-slate-100 p-5 rounded-2xl border border-slate-200">
+            <p className="text-ateneo font-black mb-2 uppercase text-[10px] tracking-widest">Tools & Concepts</p>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Azure, SignalR, Git/GitHub, OOP, n-Tier Architecture, Agile/Scrum
             </p>
           </div>
         </div>
