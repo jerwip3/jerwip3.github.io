@@ -3,11 +3,94 @@
     "name": "notes-helper-cli",
     "description": "A personal practice project demonstrating Python CLI concepts using Typer, SQLite, and Pytest.",
     "url": "https://github.com/jerwip3/notes-helper-cli",
-    "stargazerCount": 0,
+    "openGraphImageUrl": "https://opengraph.githubassets.com/c667f0670f15a79063542a4de91a3b0a88f82084198529a3cfcfb448b4324f38/jerwip3/notes-helper-cli",
     "languages": {
       "nodes": [
         {
           "name": "Python"
+        }
+      ]
+    }
+  },
+  {
+    "name": "example-website2",
+    "description": null,
+    "url": "https://github.com/jerwip3/example-website2",
+    "openGraphImageUrl": "https://opengraph.githubassets.com/ff4a0148ccd4805af1bbbcd745a7a5962374b1451bb42f1a0fd5ad4737462b16/jerwip3/example-website2",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "HTML"
+        }
+      ]
+    }
+  },
+  {
+    "name": "jerwip3.github.io",
+    "description": "homepage",
+    "url": "https://github.com/jerwip3/jerwip3.github.io",
+    "openGraphImageUrl": "https://opengraph.githubassets.com/8a301d39103b6ab3a1667e9e4fb309289e630a6038145a4bf7c2175ff0c8f36e/jerwip3/jerwip3.github.io",
+    "languages": {
+      "nodes": [
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "HTML"
+        },
+        {
+          "name": "JavaScript"
+        }
+      ]
+    }
+  },
+  {
+    "name": "js-assignment5",
+    "description": "Modern JavaScript - Assignment 5",
+    "url": "https://github.com/jerwip3/js-assignment5",
+    "openGraphImageUrl": "https://opengraph.githubassets.com/b453a3c96a4f9a3405024af0321ab91a034ac57613bc7026a5e729df34a04f4f/jerwip3/js-assignment5",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript"
+        }
+      ]
+    }
+  },
+  {
+    "name": "js-assignment6",
+    "description": null,
+    "url": "https://github.com/jerwip3/js-assignment6",
+    "openGraphImageUrl": "https://opengraph.githubassets.com/7c72604c7ecc697e9c71828ae4d453635eb49f2fc23370fb2eb04b6195a150dc/jerwip3/js-assignment6",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript"
+        }
+      ]
+    }
+  },
+  {
+    "name": "js-assignment7",
+    "description": "Starter code for JavaScript Assignment 7",
+    "url": "https://github.com/jerwip3/js-assignment7",
+    "openGraphImageUrl": "https://opengraph.githubassets.com/ddb134e0d0ba15a3850d66c526f52979936c173b0a4d5fcacb9857e0d50c2a81/jerwip3/js-assignment7",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "HTML"
         }
       ]
     }

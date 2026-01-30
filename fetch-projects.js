@@ -11,7 +11,6 @@ const query = `
                     name
                     description
                     url
-                    openGraphImageUrl
                     languages(first: 3) {
                         nodes {
                             name
