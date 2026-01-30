@@ -1,4 +1,4 @@
-# Jeremy Wipperfurth | Software Dev Portfolio
+# Personal Portfolio Page
 
 This is my personal portfolio. It's where I'm documenting my move from a career in aviation to a career in software engineering. I built it to be clean, easy to navigate, and technical enough to show what I've been learning during my degree and in my free time.
 
