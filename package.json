@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 127.0.0.1",
     "prebuild": "node fetch-projects.js",
     "build": "vite build",
     "lint": "eslint .",

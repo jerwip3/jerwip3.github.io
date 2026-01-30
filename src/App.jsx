@@ -185,7 +185,7 @@ function ProjectCard({ project }) {
 
 function App() {
   return (
-    <div className="min-h-screen bg-ateneo font-sans py-10 px-4">
+    <div className="min-h-screen font-sans py-10 px-4">
       <div className="relative max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-white/20">
         <div
           className="absolute inset-0 
