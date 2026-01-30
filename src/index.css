@@ -2,9 +2,11 @@
 
 @theme {
   --color-ateneo: #003268;
-  --color-special-red: #e3132c;
   --color-cochineal: #9b1631;
+  --color-bg-main: #002244;
 }
+
+@variant dark (&:where(.dark, .dark *));
 
 ::selection {
   background-color: var(--color-ateneo);
@@ -17,7 +19,12 @@ body,
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #001d3d;
+  background-color: var(--color-bg-main);
+  transition: background-color 500ms ease;
+}
+
+.dark {
+  --color-bg-main: #001529;
 }
 
 html {

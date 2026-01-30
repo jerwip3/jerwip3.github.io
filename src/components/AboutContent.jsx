@@ -4,14 +4,14 @@ import madisonImg from "../assets/madison.png";
 
 export default function AboutContent() {
   return (
-    <div className="p-8 md:p-16">
+    <div className="p-8 md:p-16 transition-colors duration-500">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div className="space-y-8 text-left">
-          <h2 className="text-4xl font-black text-ateneo uppercase tracking-tighter">
+          <h2 className="text-4xl font-black text-ateneo dark:text-white uppercase tracking-tighter">
             The Journey So Far
           </h2>
 
-          <div className="space-y-6 text-md text-slate-700 leading-relaxed">
+          <div className="space-y-6 text-md text-slate-700 dark:text-slate-300 leading-relaxed">
             <p>
               Born in 1993 and raised just outside of Madison in Sun Prairie,
               Wisconsin, I've been surrounded by technology for as long as I can
@@ -46,44 +46,50 @@ export default function AboutContent() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 py-6 border-y border-slate-100">
+          <div className="grid grid-cols-3 gap-4 py-6 border-y border-slate-100 dark:border-white/10">
             <div>
-              <span className="block text-[10px] text-slate-400 uppercase font-bold tracking-widest">
+              <span className="block text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">
                 Origin
               </span>
-              <span className="text-ateneo font-bold">Madison, WI</span>
+              <span className="text-ateneo dark:text-white font-bold">
+                Madison, WI
+              </span>
             </div>
             <div>
-              <span className="block text-[10px] text-slate-400 uppercase font-bold tracking-widest">
+              <span className="block text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">
                 Base
               </span>
-              <span className="text-ateneo font-bold">Dallas, TX</span>
+              <span className="text-ateneo dark:text-white font-bold">
+                Dallas, TX
+              </span>
             </div>
             <div>
-              <span className="block text-[10px] text-slate-400 uppercase font-bold tracking-widest">
+              <span className="block text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">
                 Next Waypoint
               </span>
-              <span className="text-ateneo font-bold">ASU Fall '26</span>
+              <span className="text-ateneo dark:text-white font-bold">
+                ASU Fall '26
+              </span>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
-          <div className="rounded-2xl bg-slate-100 aspect-square overflow-hidden border-2 border-ateneo shadow-md rotate-2 hover:rotate-0 transition-transform duration-500">
+          <div className="rounded-2xl bg-slate-100 dark:bg-slate-800 aspect-square overflow-hidden border-2 border-ateneo shadow-md rotate-2 hover:rotate-0 transition-transform duration-500">
             <img
               src={londonImg}
               alt="Photo at Stamford Bridge Stadium"
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="rounded-2xl bg-slate-100 aspect-square overflow-hidden border-2 border-cochineal shadow-md -rotate-10 hover:rotate-0 transition-transform duration-500 mt-8">
+          <div className="rounded-2xl bg-slate-100 dark:bg-slate-800 aspect-square overflow-hidden border-2 border-cochineal shadow-md -rotate-10 hover:rotate-0 transition-transform duration-500 mt-8">
             <img
               src={madisonImg}
               alt="Photo of Bascom Hill"
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="rounded-2xl bg-slate-100 aspect-[3/4] overflow-hidden border-2 border-ateneo shadow-md -rotate-2 hover:rotate-0 transition-transform duration-500 mt-8">
+          <div className="rounded-2xl bg-slate-100 dark:bg-slate-800 aspect-[3/4] overflow-hidden border-2 border-ateneo shadow-md -rotate-2 hover:rotate-0 transition-transform duration-500 mt-8">
             <img
               src={flightImg}
               alt="Photo of me in a Piper Archer"

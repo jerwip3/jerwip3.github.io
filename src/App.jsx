@@ -2,27 +2,46 @@ import projects from "../projects.json";
 import ResumeContent from "../src/components/ResumeContent";
 import AboutContent from "./components/AboutContent";
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Profile() {
+function Profile({ isDark, setIsDark }) {
   const [showResume, setShowResume] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
 
   return (
     <header className="relative flex flex-col items-center text-center">
-      <div className="w-full min-h-[230px] md:min-h-[230px] bg-gradient-to-br from-ateneo to-slate-900 border-t-4 border-t-cochineal flex flex-col items-center justify-center px-4 relative overflow-hidden">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.2] md:leading-tight">
+      <div className="fixed top-4 right-4 z-[100] md:absolute md:top-6 md:right-8">
+        <button
+          onClick={() => setIsDark(!isDark)}
+          className="group flex items-center gap-2 px-2 py-1 md:px-2 md:py-1 rounded-full bg-ateneo/80 dark:bg-cochineal/80 backdrop-blur-md border border-white/20 hover:bg-ateneo dark:hover:bg-cochineal transition-all cursor-pointer shadow-lg"
+        >
+          <div className="relative w-8 h-4 md:w-7 md:h-3.5 bg-white/20 rounded-full transition-colors border border-white/10">
+            <div
+              className={`absolute top-0.5 w-3 h-3 md:w-2.5 md:h-2.5 bg-white rounded-full transition-all duration-300 shadow-sm ${
+                isDark ? "left-4.5 md:left-4" : "left-0.5 md:left-0.5"
+              }`}
+            />
+          </div>
+          <span className="text-[9px] md:text-[8px] font-black uppercase tracking-widest text-white/90">
+            {isDark ? "Dark" : "Light"}
+          </span>
+        </button>
+      </div>
+
+      <div className="w-full min-h-[230px] bg-gradient-to-br from-ateneo to-slate-900 dark:from-[#003268] dark:to-[#001529] border-t-4 border-t-cochineal flex flex-col items-center justify-center px-4 relative overflow-hidden transition-all duration-500">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.2] md:leading-tight">
           Hi, I'm{" "}
           <span className="underline decoration-cochineal decoration-2 md:decoration-4 underline-offset-[8px] md:underline-offset-[12px]">
             Jeremy Wipperfurth
           </span>
         </h1>
-        <p className="mt-4 text-white font-mono text-xs uppercase tracking-[0.3em]">
+        <p className="mt-4 text-white/80 font-mono text-[10px] md:text-xs uppercase tracking-[0.2em]">
           Software Development & Computer Science
         </p>
       </div>
+
       <div className="px-4 flex flex-col items-center">
-        <p className="mt-8 text-xl text-slate-600 max-w-2xl leading-relaxed">
+        <p className="mt-8 text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
           Software Development student and incoming ASU CS candidate.
           Transitioning from aviation to building clean, logic-driven
           applications.
@@ -31,7 +50,7 @@ function Profile() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-xl justify-center">
           <button
             onClick={() => setShowResume(true)}
-            className="flex-1 w-full sm:w-64 px-8 py-4 bg-ateneo text-white font-black rounded-full transition-all hover:bg-cochineal active:scale-95 shadow-xl shadow-ateneo/20 hover:shadow-cochineal/20 uppercase tracking-widest text-sm"
+            className="flex-1 w-full sm:w-64 px-8 py-4 bg-ateneo dark:bg-cochineal text-white font-black rounded-full transition-all hover:bg-cochineal dark:hover:bg-[#001a35] active:scale-95 shadow-xl shadow-ateneo/20 dark:shadow-black/40 uppercase tracking-widest text-sm"
           >
             View Resume
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -41,7 +60,7 @@ function Profile() {
 
           <button
             onClick={() => setShowAbout(true)}
-            className="flex-1 w-full sm:w-64 px-8 py-4 bg-transparent text-ateneo font-black rounded-full transition-all hover:bg-ateneo/5 border-2 border-ateneo/20 active:scale-95 uppercase tracking-widest text-sm"
+            className="flex-1 w-full sm:w-64 px-8 py-4 bg-transparent text-ateneo dark:text-slate-300 font-black rounded-full transition-all hover:bg-ateneo/5 dark:hover:bg-white/5 border-2 border-ateneo/20 dark:border-white/10 active:scale-95 uppercase tracking-widest text-sm"
           >
             The Story
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -59,44 +78,42 @@ function Profile() {
 
       {showResume && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-10"
+          className="fixed inset-0 z-[110] flex items-center justify-center p-4 md:p-10"
           onClick={() => setShowResume(false)}
         >
-          <div className="absolute inset-0 bg-ateneo/60 backdrop-blur-sm" />
-
+          <div className="absolute inset-0 bg-ateneo/60 dark:bg-black/80 backdrop-blur-sm" />
           <div
-            className="relative bg-white w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-200 shadow-2xl custom-scrollbar pr-2"
+            className="relative bg-white dark:bg-[#001d3d] w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl custom-scrollbar pr-2"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setShowResume(false)}
-              className="absolute top-6 right-6 text-slate-400 hover:text-special-red text-2xl font-bold transition-colors"
+              className="absolute top-6 right-6 text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-2xl font-bold transition-colors z-20"
             >
               X
             </button>
-
             <ResumeContent />
           </div>
         </div>
       )}
+
       {showAbout && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-10"
+          className="fixed inset-0 z-[110] flex items-center justify-center p-4 md:p-10"
           onClick={() => setShowAbout(false)}
         >
-          <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-slate-900/80 dark:bg-black/90 backdrop-blur-sm" />
           <div
-            className="relative bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl custom-scrollbar"
+            className="relative bg-white dark:bg-[#001d3d] w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl custom-scrollbar border border-transparent dark:border-white/5"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="h-2 bg-cochineal w-full" />
             <button
               onClick={() => setShowAbout(false)}
-              className="absolute top-8 right-8 text-slate-400 hover:text-cochineal text-2xl font-bold transition-colors z-10"
+              className="absolute top-8 right-8 text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-2xl font-bold transition-colors z-20"
             >
               X
             </button>
-
             <AboutContent />
           </div>
         </div>
@@ -122,16 +139,17 @@ function ProjectCard({ project }) {
     <div
       className="group relative rounded-2xl overflow-hidden transition-all duration-300 
                  hover:-translate-y-2 hover:shadow-2xl
-                 bg-white shadow-xl
+                 bg-white dark:bg-[#002a4d] shadow-xl
                  border-x border-cochineal/20 
                  border-t-4 border-t-cochineal 
-                 border-b-4 border-b-ateneo 
+                 border-b-4 border-b-ateneo dark:border-b-white/10
                  flex flex-col h-full"
     >
       <div
         className="h-28 relative overflow-hidden p-5 flex flex-col justify-between transition-colors duration-500
-                      bg-gradient-to-br from-ateneo to-slate-900 
-                      group-hover:from-cochineal group-hover:to-red-900"
+                   bg-gradient-to-br from-ateneo to-slate-900 
+                   dark:from-[#003268] dark:to-[#001529]
+                   group-hover:from-cochineal group-hover:to-red-900"
       >
         <div className="flex justify-between items-start">
           <svg
@@ -159,23 +177,23 @@ function ProjectCard({ project }) {
       </div>
 
       <div className="p-6 flex flex-col flex-grow">
-        <h2 className="text-xl font-bold text-ateneo group-hover:text-cochineal transition-colors duration-300 uppercase tracking-tight">
+        <h2 className="text-xl font-bold text-ateneo dark:text-white group-hover:text-cochineal transition-colors duration-300 uppercase tracking-tight">
           {project.name}
         </h2>
 
-        <p className="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">
+        <p className="text-slate-600 dark:text-slate-200 mt-3 text-sm leading-relaxed flex-grow font-medium">
           {project.description ||
             "Portfolio project demonstrating advanced software development concepts."}
         </p>
 
-        <div className="mt-6 pt-4 border-t border-slate-100">
+        <div className="mt-6 pt-4 border-t border-slate-100 dark:border-white/10">
           <a
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-black uppercase tracking-tighter text-cochineal hover:text-ateneo transition-colors inline-flex items-center gap-2"
+            className="text-xs font-black uppercase text-cochineal dark:text-white hover:text-ateneo dark:hover:text-cochineal transition-colors inline-flex items-center gap-2"
           >
-            Explore Repository <span>→</span>
+            Explore Repository <span className="text-lg">→</span>
           </a>
         </div>
       </div>
@@ -184,19 +202,27 @@ function ProjectCard({ project }) {
 }
 
 function App() {
-  return (
-    <div className="min-h-screen font-sans py-10 px-4">
-      <div className="relative max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-white/20">
-        <div
-          className="absolute inset-0 
-                        bg-[radial-gradient(circle_at_50%_0%,rgba(0,50,104,0.08)_0%,transparent_75%)] 
-                        pointer-events-none -z-10"
-        />
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
-        <Profile />
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDark]);
+
+  return (
+    <div className="min-h-screen font-sans py-10 px-4 transition-colors duration-500">
+      <div className="relative max-w-6xl mx-auto bg-white dark:bg-[#001d3d] rounded-3xl shadow-2xl overflow-hidden border border-white/20 transition-colors duration-500">
+        <Profile isDark={isDark} setIsDark={setIsDark} />
 
         <section className="pb-20 px-6">
-          <h2 className="text-3xl font-bold mb-10 text-center text-ateneo tracking-tighter uppercase">
+          <h2 className="text-3xl font-bold mb-10 text-center text-ateneo dark:text-white tracking-tighter uppercase">
             Featured Projects
           </h2>
 
@@ -206,28 +232,29 @@ function App() {
             ))}
           </div>
         </section>
-        <footer className="py-10 border-t border-slate-100 bg-slate-50/50 text-center">
+
+        <footer className="py-10 border-t border-white/10 bg-gradient-to-br from-ateneo to-slate-900 dark:from-[#003268] dark:to-[#001529] text-center transition-colors duration-500">
           <div className="flex justify-center gap-6 mb-4">
             <a
               href="https://github.com/jerwip3"
-              className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm"
+              className="text-white dark:text-slate-300 hover:text-cochineal dark:hover:text-cochineal transition-colors font-bold text-sm"
             >
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/jeremywipperfurth/"
-              className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm"
+              className="text-white dark:text-slate-300 hover:text-cochineal dark:hover:text-cochineal transition-colors font-bold text-sm"
             >
               LinkedIn
             </a>
             <a
               href="mailto:jerwip@gmail.com"
-              className="text-ateneo hover:text-cochineal transition-colors font-bold text-sm"
+              className="text-white dark:text-slate-300 hover:text-cochineal dark:hover:text-cochineal transition-colors font-bold text-sm"
             >
               Email
             </a>
           </div>
-          <p className="text-[10px] text-ateneo uppercase tracking-[0.2em] ">
+          <p className="text-[10px] text-white dark:text-slate-500 uppercase tracking-[0.2em]">
             &copy; 2026 Jeremy Wipperfurth - Built with React & Tailwind v4
           </p>
         </footer>

@@ -15,4 +15,4 @@ This project served as a way to build a professional presence while gaining hand
 
 - **Dynamic Cards:** The project grid is automated by a build-script that identifies which of my repositories are pinned and public.
 - **Double Modals:** I implemented two separate popouts for my resume and a "Story" section that includes a couple travel photos and some personal background.
-- **High-Contrast Aesthetic:** The Navy Blue and Red palette was selected to create a professional, high contrast visual identity. This color scheme, paired with a clean UI, ensures the site is both aesthetically pleasing and easy to navigate.
+- **Navy & Red Theme:** I used a high-contrast Navy and Red palette to keep things professional. I also built in a theme toggle that swaps these colors as indicators, so the site stays easy on the eyes in both light and dark mode.
