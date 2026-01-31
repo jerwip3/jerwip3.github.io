@@ -55,9 +55,11 @@ export default function ResumeContent() {
                   <ul className="grid grid-cols-1 gap-1 text-sm text-slate-600 dark:text-slate-400">
                     <li>• Advanced Software Development</li>
                     <li>• Agile Development</li>
-                    <li>• ASP.NET Core & SignalR</li>
+                    <li>• ASP.NET</li>
                     <li>• Systems Analysis</li>
                     <li>• Data Administration</li>
+                    <li>• Modern JavaScript</li>
+                    <li>• Computer Programming C++</li>
                   </ul>
                 </div>
 
@@ -174,8 +176,8 @@ export default function ResumeContent() {
               Languages & Frameworks
             </p>
             <p className="text-sm text-white dark:text-white leading-relaxed font-medium">
-              C#, C++, JavaScript, SQL, ASP.NET Core, React, Tailwind CSS,
-              Entity Framework
+              C#, C++, JavaScript, SQL, ASP.NET, PHP, .NET MAUI, React, Tailwind
+              CSS, Entity Framework
             </p>
           </div>
 
