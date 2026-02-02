@@ -2,6 +2,7 @@ import "dotenv/config";
 import fetch from "node-fetch";
 import fs from "fs/promises";
 
+// GraphQL query to fetch pinned repositories from my GitHub profile
 const query = `
 {
     user(login: "jerwip3"){
@@ -22,6 +23,7 @@ const query = `
     }
 }`;
 
+// Function that fetches projects and write to projects.json
 async function getProjects() {
   const token = process.env.VITE_GITHUB_TOKEN || process.env.GITHUB_TOKEN;
 

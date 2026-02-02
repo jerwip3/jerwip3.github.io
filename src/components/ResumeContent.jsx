@@ -37,7 +37,7 @@ export default function ResumeContent() {
               </p>
             </div>
             <p className="text-cochineal dark:text-slate-400 font-semibold italic">
-              A.A.S. – Software Developer
+              A.A.S. - Software Developer
             </p>
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-1 uppercase tracking-widest font-bold">
               GPA: 3.89 | Dean's List | Phi Theta Kappa
@@ -88,7 +88,7 @@ export default function ResumeContent() {
               </p>
             </div>
             <p className="text-cochineal dark:text-slate-400 font-semibold italic text-sm">
-              B.S. – Computer Science Candidate
+              B.S. - Computer Science Candidate
             </p>
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-1 italic">
               Accepted for transfer to complete bachelor's degree
@@ -108,7 +108,7 @@ export default function ResumeContent() {
                 Delta Air Lines | Ramp Agent
               </p>
               <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">
-                Jan 2022 – Present
+                Jan 2022 - Present
               </p>
             </div>
             <p className="text-ateneo dark:text-white/80 text-sm font-bold mb-3 italic">
@@ -143,7 +143,7 @@ export default function ResumeContent() {
                 Envoy Air | Customer Service & Ramp Crew Chief
               </p>
               <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                Jun 2017 – Jan 2022
+                Jun 2017 - Jan 2022
               </p>
             </div>
             <ul className="list-disc list-outside ml-5 mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-400">

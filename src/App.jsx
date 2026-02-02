@@ -46,7 +46,7 @@ function Profile({ isDark, setIsDark }) {
           Transitioning from aviation to building clean, logic-driven
           applications.
         </p>
-
+        {/* Buttons to pop up modals that display resume and about content pages */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-xl justify-center">
           <button
             onClick={() => setShowResume(true)}
@@ -131,19 +131,8 @@ function Profile({ isDark, setIsDark }) {
   );
 }
 
-function ProjectImage({ src, name }) {
-  const fallbackImage = "/src/assets/code-snippet.png";
-
-  return (
-    <img
-      src={src || fallbackImage}
-      alt={name}
-      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-    />
-  );
-}
-
 function ProjectCard({ project }) {
+  // Cards that display pinned project details from GitHub pulled in using GraphQL
   return (
     <div
       className="group relative rounded-2xl overflow-hidden transition-all duration-300 
