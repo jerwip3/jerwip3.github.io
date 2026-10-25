@@ -22,7 +22,7 @@ export default function AboutContent() {
             </p>
             <p>
               As I wrap up my AAS in Software Development this spring and
-              prepare to join Arizona State University's Computer Science
+              prepare to join Oregon State University's Computer Science
               program in the fall, I'm focused on building applications that are
               as as intuitive as they are robust. Currently splitting my time
               between Madison and Dallas, I spend my life away from the keyboard
@@ -54,7 +54,7 @@ export default function AboutContent() {
                 Next Waypoint
               </span>
               <span className="text-ateneo dark:text-white font-bold">
-                ASU Fall '26
+                OSU Fall '26
               </span>
             </div>
           </div>

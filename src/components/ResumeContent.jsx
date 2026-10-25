@@ -81,7 +81,7 @@ export default function ResumeContent() {
           <div className="pt-6 border-t border-slate-100 dark:border-white/10">
             <div className="flex justify-between items-baseline flex-wrap gap-2">
               <p className="font-bold text-slate-900 dark:text-white text-lg">
-                Arizona State University
+                Oregon State University
               </p>
               <p className="text-sm font-bold text-ateneo dark:text-slate-300">
                 Fall 2026 Start

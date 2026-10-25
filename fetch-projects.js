@@ -12,6 +12,7 @@ const query = `
                     name
                     description
                     url
+                    isPrivate
                     languages(first: 3) {
                         nodes {
                             name

@@ -42,7 +42,7 @@ function Profile({ isDark, setIsDark }) {
 
       <div className="px-4 flex flex-col items-center">
         <p className="mt-8 text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
-          Software Development student and incoming ASU CS candidate.
+          Software Development student and incoming Oregon State CS candidate.
           Transitioning from aviation to building clean, logic-driven
           applications.
         </p>
@@ -89,6 +89,8 @@ function Profile({ isDark, setIsDark }) {
             <div className="h-2 bg-cochineal w-full sticky top-0 z-40" />
             <div className="sticky top-2 right-0 z-30 flex justify-end p-6 pointer-events-none">
               <button
+                type="button"
+                aria-label="Close resume"
                 onClick={() => setShowResume(false)}
                 className="pointer-events-auto bg-white/10 dark:bg-black/20 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-xl font-bold transition-all shadow-lg border border-white/10"
               >
@@ -115,6 +117,8 @@ function Profile({ isDark, setIsDark }) {
             <div className="h-2 bg-cochineal w-full sticky top-0 z-30" />
             <div className="sticky top-2 right-0 z-30 flex justify-end p-6 pointer-events-none">
               <button
+                type="button"
+                aria-label="Close about"
                 onClick={() => setShowAbout(false)}
                 className="pointer-events-auto bg-white/10 dark:bg-black/20 backdrop-blur-md w-10 h-10 rounded-full flex items-center justify-center text-slate-400 dark:text-white/40 hover:text-cochineal dark:hover:text-white text-xl font-bold transition-all shadow-lg border border-white/10"
               >
