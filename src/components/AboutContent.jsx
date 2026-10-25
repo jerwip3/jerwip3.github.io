@@ -24,7 +24,7 @@ export default function AboutContent() {
               As I wrap up my AAS in Software Development this spring and
               prepare to join Oregon State University's Computer Science
               program in the fall, I'm focused on building applications that are
-              as as intuitive as they are robust. Currently splitting my time
+              as intuitive as they are robust. Currently splitting my time
               between Madison and Dallas, I spend my life away from the keyboard
               cheering for the Packers, Chelsea FC, and the Avalanche, or
               staying rooted in Wisconsin sports with the Badgers and Forward

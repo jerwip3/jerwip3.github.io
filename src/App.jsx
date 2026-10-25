@@ -50,7 +50,7 @@ function Profile({ isDark, setIsDark }) {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-xl justify-center">
           <button
             onClick={() => setShowResume(true)}
-            className="flex-1 w-full sm:w-64 px-8 py-4 bg-ateneo dark:bg-cochineal text-white font-black rounded-full transition-all hover:bg-cochineal dark:hover:bg-[#001a35] active:scale-95 shadow-xl shadow-ateneo/20 dark:shadow-black/40 uppercase tracking-widest text-sm"
+            className="group flex-1 w-full sm:w-64 px-8 py-4 bg-ateneo dark:bg-cochineal text-white font-black rounded-full transition-all hover:bg-cochineal dark:hover:bg-white dark:hover:text-cochineal active:scale-95 shadow-xl shadow-ateneo/20 dark:shadow-black/40 uppercase tracking-widest text-sm"
           >
             View Resume
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -60,7 +60,7 @@ function Profile({ isDark, setIsDark }) {
 
           <button
             onClick={() => setShowAbout(true)}
-            className="flex-1 w-full sm:w-64 px-8 py-4 bg-transparent text-ateneo dark:text-slate-300 font-black rounded-full transition-all hover:bg-ateneo/5 dark:hover:bg-white/5 border-2 border-ateneo/20 dark:border-white/10 active:scale-95 uppercase tracking-widest text-sm"
+            className="group flex-1 w-full sm:w-64 px-8 py-4 bg-cochineal dark:bg-white text-white dark:text-ateneo font-black rounded-full transition-all hover:bg-ateneo dark:hover:bg-cochineal dark:hover:text-white active:scale-95 shadow-xl shadow-cochineal/20 dark:shadow-black/40 uppercase tracking-widest text-sm"
           >
             The Story
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
